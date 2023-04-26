@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiFillBook
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -94,11 +95,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/education"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <AiFillBook style={{ marginBottom: "2px" }} /> Education
               </Nav.Link>
             </Nav.Item>
 

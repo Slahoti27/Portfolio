@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import spotify from "../../Assets/Projects/spotify.png";
+import news from "../../Assets/Projects/news.jpg";
+import ML from "../../Assets/Projects/ML.jpeg";
+import ACM from "../../Assets/Projects/ACM.jpeg";
+import TDL from "../../Assets/Projects/TDL.jpeg";
+import TicTacToe from "../../Assets/Projects/TicTacToe.png";
+import ecw from "../../Assets/Projects/ecw.png";
+
 
 function Projects() {
   return (
@@ -23,70 +25,86 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={ACM}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="ACM"
+              description="This is the ACM Student chapter website build in HTML, CSS and JS."
+              ghLink="https://github.com/Slahoti27/ACM-website-2022-2023"
+              demoLink="https://slahoti27.github.io/ACM-website-2022-2023/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={news}
+            isBlog={false}
+            title="Sky News"
+            description="This is the news app. You can see the current news differentiated on the basis of categories like business, education, technology, etc. "
+            ghLink="https://github.com/Slahoti27/Sky-News/tree/master"
+            demoLink="#"      
+          />
+        </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TicTacToe}
+              isBlog={false}
+              title="Tic Tac Toe Game"
+              description="My simple java code for making TicTacToe game."
+              ghLink="https://github.com/Slahoti27/TicTacToe-Game"
+              // demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={ecw}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="E-Commerce Website"
+              description="This is the E-commerce website built in php for multiple products along with admin panel. Admin can control the website by Admin panel."
+              ghLink="https://github.com/Slahoti27/E-Commerce/tree/master"
+              demoLink="#"      
+            />
+          </Col>
+
+          
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TDL}
+              isBlog={false}
+              title="To Do List"
+              description="This is To Do List. You can add the task to be done also delete the task completed with a user-friendly user-interface. It is built in HTML, CSS, JavaScript."
+              ghLink="https://github.com/Slahoti27/ToDoList"
+              demoLink="https://slahoti27.github.io/ToDoList/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={spotify}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Spotify Clone"
+              description="This is the clone of spotify built in HTML, CSS, JavaScript "
+              ghLink="https://github.com/Slahoti27/Spotify_Clone/tree/master"
+              demoLink="https://slahoti27.github.io/Spotify_Clone/" 
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ML}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="House Price Prediction"
+              description="This is Data Science project using Linear Regression Algorithm. This project helps to predict house prices using previous data from dataset taken from kaggle."
+              ghLink="#"
+                            
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
+          
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>
